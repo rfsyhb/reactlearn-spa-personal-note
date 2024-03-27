@@ -12,7 +12,7 @@ function Navigation() {
           <Link to="/archived">Archived</Link>
         </li>
         <li>
-          <Link to="/add">Create New Note</Link>
+          <Link to="/note/add">Create New Note</Link>
         </li>
       </ul>
     </nav>
