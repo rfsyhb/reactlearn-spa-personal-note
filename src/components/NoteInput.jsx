@@ -46,11 +46,10 @@ class NoteInput extends React.Component {
           <div
             className="add-new-page__input__body"
             type="text"
-            placeholder="Note body ..."
+            data-placeholder="Note body ..."
             contentEditable
             onInput={this.onBodyChangeHandler}
           />
-          <button></button>
         </div>
         <div className="add-new-page__action">
           <button className="action" onClick={this.onSubmitInputHandler}>+</button>
