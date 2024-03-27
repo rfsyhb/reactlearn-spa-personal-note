@@ -13,30 +13,38 @@ function NoteDetailAction({
 
   const handleDelete = (id) => {
     onDelete(id);
-    navigate('/');
-  }
+    navigate("/");
+  };
 
   const handleArchive = (id) => {
     onArchive(id);
-    navigate('/');
-  }
+    navigate("/");
+  };
 
   const handleUnarchive = (id) => {
     onUnarchive(id);
-    navigate('/');
-  }
+    navigate("/");
+  };
 
   return (
     <>
       {archivedStatus ? (
         <>
-          <button onClick={() => handleDelete(id)}>Delete</button>
-          <button onClick={() => handleUnarchive(id)}>Unarchive</button>
+          <button className="action" onClick={() => handleDelete(id)}>
+            -
+          </button>
+          <button className="action" onClick={() => handleUnarchive(id)}>
+            /
+          </button>
         </>
       ) : (
         <>
-          <button onClick={() => handleDelete(id)}>Delete</button>
-          <button onClick={() => handleArchive(id)}>Archive</button>
+          <button className="action" onClick={() => handleDelete(id)}>
+            -
+          </button>
+          <button className="action" onClick={() => handleArchive(id)}>
+            /
+          </button>
         </>
       )}
     </>
@@ -49,6 +57,6 @@ NoteDetailAction.propTypes = {
   onDelete: PropTypes.func.isRequired,
   onArchive: PropTypes.func.isRequired,
   onUnarchive: PropTypes.func.isRequired,
-}
+};
 
 export default NoteDetailAction;

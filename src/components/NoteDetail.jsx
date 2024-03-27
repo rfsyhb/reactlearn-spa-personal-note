@@ -18,7 +18,7 @@ function NoteDetail({
       <h1 className="detail-page__title"></h1>
       <section className="detail-page__body">
         <p>
-          {archived ? "Sebuah catatan yang diarsipkan" : "Sebuah catatan aktif"}
+          {archived ? "<archived note>" : "<active note>"}
         </p>
         <NoteItem id={id} title={title} body={body} createdAt={createdAt} />
       </section>
