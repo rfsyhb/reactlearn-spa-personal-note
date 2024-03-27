@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
+import { MdDelete, MdArchive, MdUnarchive } from "react-icons/md";
 
 function NoteDetailAction({
   id,
@@ -31,19 +32,19 @@ function NoteDetailAction({
       {archivedStatus ? (
         <>
           <button className="action" onClick={() => handleDelete(id)}>
-            -
+            <MdDelete />
           </button>
           <button className="action" onClick={() => handleUnarchive(id)}>
-            /
+            <MdUnarchive />
           </button>
         </>
       ) : (
         <>
           <button className="action" onClick={() => handleDelete(id)}>
-            -
+            <MdDelete />
           </button>
           <button className="action" onClick={() => handleArchive(id)}>
-            /
+            <MdArchive />
           </button>
         </>
       )}
