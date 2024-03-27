@@ -53,7 +53,11 @@ class DetailPage extends React.Component {
 
   render() {
     if (!this.state.note) {
-      return <p>Note is not found!</p>;
+      return (
+        <section className="error-page">
+          <p>Note is not found!</p>
+        </section>
+      );
     }
 
     return (
