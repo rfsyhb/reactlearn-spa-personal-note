@@ -73,7 +73,7 @@ class DetailPage extends React.Component {
   }
 }
 
-DetailPage.propType = {
+DetailPage.propTypes = {
   id: PropTypes.string.isRequired,
 };
 

@@ -37,6 +37,7 @@ class NoteInput extends React.Component {
       <>
         <div className="add-new-page__input">
           <input
+            id="input-title"
             className="add-new-page__input__title"
             type="text"
             placeholder="Note title ..."
@@ -52,7 +53,9 @@ class NoteInput extends React.Component {
           />
         </div>
         <div className="add-new-page__action">
-          <button className="action" onClick={this.onSubmitInputHandler}>+</button>
+          <button className="action" onClick={this.onSubmitInputHandler}>
+            +
+          </button>
         </div>
       </>
     );

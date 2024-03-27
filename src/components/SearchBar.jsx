@@ -6,6 +6,7 @@ function SearchBar({ title, keyword, keywordChange }) {
     <div className="search-bar">
       <h2>{title}</h2>
       <input
+        id="title"
         type="text"
         placeholder="Cari catatan ..."
         value={keyword}
