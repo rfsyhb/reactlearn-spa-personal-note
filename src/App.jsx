@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "./components/Navigation";
 import { Routes, Route } from "react-router-dom";
 import HomePageWrapper from "./pages/HomePage";
+import ArchivedPageWrapper from "./pages/ArchivedPage";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePageWrapper />} />
-          <Route path="/archived" element={<p>Ini archived page</p>} />
+          <Route path="/archived" element={<ArchivedPageWrapper />} />
           <Route path="/add" element={<p>Ini add new note page</p>} />
           <Route path="*" element={<p>Error 404: Page not found</p>} />
         </Routes>
