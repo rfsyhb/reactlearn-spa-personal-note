@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function SearchBar({ keyword, keywordChange }) {
+function SearchBar({ title, keyword, keywordChange }) {
   return (
     <div className="search-bar">
-      <h2>Catatan Aktif</h2>
+      <h2>{title}</h2>
       <input
         type="text"
         placeholder="Cari catatan aktif ..."
@@ -16,6 +16,7 @@ function SearchBar({ keyword, keywordChange }) {
 }
 
 SearchBar.propTypes = {
+  title: PropTypes.string.isRequired,
   keyword: PropTypes.string.isRequired,
   keywordChange: PropTypes.func.isRequired,
 };

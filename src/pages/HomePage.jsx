@@ -53,7 +53,11 @@ class HomePage extends React.Component {
 
     return (
       <section>
-        <SearchBar keyword={this.state.keyword} keywordChange={this.onSearchChangeHandler} />
+        <SearchBar
+          title="Catatan Aktif"
+          keyword={this.state.keyword}
+          keywordChange={this.onSearchChangeHandler}
+        />
         <NotesList notes={filteredNotes} />
       </section>
     );
