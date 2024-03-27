@@ -1,7 +1,7 @@
 import React from "react";
 import NotesList from "../components/NotesList";
 import SearchBar from "../components/SearchBar";
-import { getAllNotes } from "../utils/local-data";
+import { getActiveNotes } from "../utils/local-data";
 import { useSearchParams } from "react-router-dom";
 import PropTypes from 'prop-types'
 
@@ -28,7 +28,7 @@ class HomePage extends React.Component {
     super(props);
 
     this.state = {
-      notes: getAllNotes(),
+      notes: getActiveNotes(),
       keyword: props.defaultKeyword || "",
     };
   }
@@ -55,7 +55,7 @@ class HomePage extends React.Component {
     return (
       <section>
         <SearchBar
-          title="Catatan Aktif"
+          title="Active Notes"
           keyword={this.state.keyword}
           keywordChange={this.onSearchChangeHandler}
         />

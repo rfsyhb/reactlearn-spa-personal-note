@@ -7,7 +7,7 @@ function SearchBar({ title, keyword, keywordChange }) {
       <h2>{title}</h2>
       <input
         type="text"
-        placeholder="Cari catatan aktif ..."
+        placeholder="Cari catatan ..."
         value={keyword}
         onChange={(event) => keywordChange(event.target.value)}
       />

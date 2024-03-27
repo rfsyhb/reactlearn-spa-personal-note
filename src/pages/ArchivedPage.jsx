@@ -49,7 +49,7 @@ class ArchivedPage extends React.Component {
     return (
       <section>
         <SearchBar
-          title="Catatan yang di Arsipkan"
+          title="Archived Notes"
           keyword={this.state.keyword}
           keywordChange={this.onSearchChangeHandler}
         />
