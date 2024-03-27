@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function NotesList({ notes }) {
   if (!notes.length) {
     return (
-      <section className="note-list-empty">
+      <section className="notes-list-empty">
         <p>There is no note added!</p>
       </section>
     );
