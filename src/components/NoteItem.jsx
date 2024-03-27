@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { showFormattedDate } from '../utils/index'
 
-function NoteItem({ id, title, body, createdAt, archived, showFormattedDate }) {
+function NoteItem({ id, title, body, createdAt, archived }) {
   return (
     <article className="note-item">
       <h3 className="note-item__title">
@@ -20,7 +21,6 @@ NoteItem.propTypes = {
   body: PropTypes.string.isRequired,
   createdAt: PropTypes.string.isRequired,
   archived: PropTypes.bool.isRequired,
-  showFormattedDate: PropTypes.func.isRequired,
 };
 
 export default NoteItem;

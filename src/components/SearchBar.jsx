@@ -4,9 +4,10 @@ import PropTypes from "prop-types";
 function SearchBar({ keyword, keywordChange }) {
   return (
     <div className="search-bar">
+      <h2>Catatan Aktif</h2>
       <input
         type="text"
-        placeholder="Cari note..."
+        placeholder="Cari catatan aktif ..."
         value={keyword}
         onChange={(event) => keywordChange(event.target.value)}
       />
