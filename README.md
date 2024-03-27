@@ -9,6 +9,8 @@ Ini adalah tugas submission "Membangun Single Page Application menggunakan React
 - Search and filter notes based on keywords
 - Rich text editing with HTML support
 - User-friendly interface with intuitive navigation
+- Easy navigation between different pages of the application using [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+- Supports dynamic routing and parameter passing
 
 ## Dependencies
 
