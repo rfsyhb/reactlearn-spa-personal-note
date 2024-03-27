@@ -3,6 +3,7 @@ import NoteDetail from "../components/NoteDetail";
 import { useParams } from "react-router-dom";
 import { getNote } from "../utils/local-data";
 import { deleteNote, archiveNote, unarchiveNote } from "../utils/local-data";
+import PropTypes from "prop-types";
 
 function DetailPageWrapper() {
   // mengambil id
@@ -67,5 +68,9 @@ class DetailPage extends React.Component {
     );
   }
 }
+
+DetailPage.propType = {
+  id: PropTypes.string.isRequired,
+};
 
 export default DetailPageWrapper;
