@@ -6,13 +6,13 @@ function Navigation() {
     <nav className="navigation">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Active</Link>
         </li>
         <li>
           <Link to="/archived">Archived</Link>
         </li>
         <li>
-          <Link to="/add">Add</Link>
+          <Link to="/add">Create New Note</Link>
         </li>
       </ul>
     </nav>

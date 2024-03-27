@@ -3,6 +3,7 @@ import NotesList from "../components/NotesList";
 import SearchBar from "../components/SearchBar";
 import { getAllNotes } from "../utils/local-data";
 import { useSearchParams } from "react-router-dom";
+import PropTypes from 'prop-types'
 
 // Menambah regular karena class tidak bisa useSearchParams
 function HomePageWrapper() {
@@ -62,6 +63,11 @@ class HomePage extends React.Component {
       </section>
     );
   }
+}
+
+HomePage.propTypes = {
+  defaultKeyword: PropTypes.string,
+  keywordChange: PropTypes.func.isRequired,
 }
 
 export default HomePageWrapper;
